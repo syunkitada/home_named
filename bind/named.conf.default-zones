@@ -1,0 +1,29 @@
+zone "mydns.jp" {
+    type master;
+    file "/etc/bind/mydns.jp.zone";
+};
+
+zone "vagrant.mydns.jp" {
+    type master;
+    file "/etc/bind/vagrant.mydns.jp.zone";
+};
+
+zone "qemu.mydns.jp" {
+    type master;
+    file "/etc/bind/qemu.mydns.jp.zone";
+};
+
+zone "11.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/11.168.192.rev";
+};
+
+zone "localhost" {
+    type master;
+    file "/etc/bind/localhost.zone";
+};
+
+zone "0.0.127.in-addr.arpa" {
+    type master;
+    file "/etc/bind/localhost.rev";
+};

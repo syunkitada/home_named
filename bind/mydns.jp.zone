@@ -1,0 +1,14 @@
+$TTL 86400
+@ IN SOA www.mydns.jp. syun.kitada.gmail.com.(
+    2015092600  ; serial
+    3600        ; refresh 1hr
+    900         ; retry 15min
+    604800      ; expire 1w
+    86400)      ; min 24hr
+
+        IN  NS      www.mydns.jp.
+www     IN  A       192.168.11.2
+code    IN  CNAME   www
+
+dev01  IN  A       192.168.122.43
+dev02  IN  A       192.168.122.6
