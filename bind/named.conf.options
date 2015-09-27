@@ -9,9 +9,9 @@ options {
     };
 
     // 回送先DNSサーバ
-    // forwarders {
-    //     192.168.11.1;
-    // };
+    forwarders {
+        192.168.11.1;
+    };
 
     // ゾーン情報の転送はしない ( セカンダリDNSサーバーを指定する場合は使用 )
     allow-transfer {
